@@ -12,6 +12,7 @@ public class Arac : Varlik {
 
     public float speed = 0;
     public Vector3 rota = Vector3.zero;
+    public Vector3 veli = Vector3.zero;
     public GameObject bullet;
     public Rigidbody rb;
     public void Start () {
@@ -28,10 +29,16 @@ public class Arac : Varlik {
     public void Update () {
         base.Update();
         if (user == "player") {
-            move ();
+            move();
+            rb.velocity -= Vector3.ProjectOnPlane(rb.velocity, transform.forward);
             shoot();
         }
     }
+    /*
+    public void FixedUpdate()
+    {
+        rb.velocity -= Vector3.ProjectOnPlane(rb.velocity, transform.forward);
+    }*/
     public void shoot(){
         if(Input.GetKeyDown(KeyCode.Space)){
             Bullet.create(transform.forward * 5 + transform.position, transform.rotation, rb.velocity, transform.forward * 1000, Color.red);

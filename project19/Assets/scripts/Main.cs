@@ -30,21 +30,22 @@ public class Main : MonoBehaviour
         return go;
     }
     public void createMerkez() {
-        /*
+        
         int alan = 100000;
-        for(int i=0; i<100;i++){
+        for(int i=0; i<50;i++){
             var merk = Merkez.create("MERKEZ[" + i + "]", new Vector3(Random.Range(-alan, alan), Random.Range(-alan, alan), Random.Range(-alan, alan)));
             Bina ekle = merk.anabina;
             for(int j=0; j<50; j++)
             {
                 ekle = ekle.create(Bina.klist[Random.Range(0, Bina.klist.Count)], Bina.Varsa.silEkle);
             }
-        }*/
+        }
+        /*
         var merk = Merkez.create("MERKEZ[0]", new Vector3(0,0,0));
         Bina ekle = merk.anabina;
         for (int j = 0; j < 50; j++)
         {
             ekle = ekle.create(Bina.klist[Random.Range(0, Bina.klist.Count)], Bina.Varsa.silEkle);
-        }
+        }*/
     }
 }

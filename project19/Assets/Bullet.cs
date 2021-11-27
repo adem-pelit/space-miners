@@ -36,7 +36,7 @@ public class Bullet : Varlik
             Debug.Log("Do something else here");
         }
         //print(collision.gameObject.name);
-        Explosion.create(transform.position, Color.white);
+        Explosion.create(transform.position, Color.blue);
         print(collision.gameObject.name);
         var varlik = collision.gameObject.GetComponent<Varlik>();
         varlik.saglik -= 30;
@@ -59,7 +59,7 @@ public class Bullet : Varlik
         var isik = go.AddComponent<Light>();
         isik.color = color;
         isik.range = 1000;
-        isik.intensity = 10;
+        isik.intensity = 2;
     }
 
     IEnumerator die()
