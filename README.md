@@ -37,5 +37,9 @@ Uzay gemisinin manevralarını yapmak, ateş etmek ve blokları en kısa sürede
 * Uzay gemisi modellemesini internetten aldığım hazır asset ile modelledim.
 * Arayüzler
 
+## Geliştiriciler
+* ADEM PELİT - 18360859018
+* BURAK EREN ÇATAL - 21360859204
+
 ## Kullanılan Assetler ve linkleri
 https://assetstore.unity.com/packages/3d/vehicles/space/spacefighter-87056
