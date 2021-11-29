@@ -28,7 +28,7 @@ public class Explosion : MonoBehaviour
         var isik = go.AddComponent<Light>();
         isik.color = color;
         isik.range = 1000;
-        isik.intensity = 10;
+        isik.intensity = 3;
 
         return exp;
     }
