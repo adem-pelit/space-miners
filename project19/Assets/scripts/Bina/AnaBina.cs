@@ -10,7 +10,7 @@ public class AnaBina : Bina
         //print(merkez.name + " " + konum + "size");
         var go = GameObject.CreatePrimitive(PrimitiveType.Cube);
         go.name = "AnaBina"+konum;
-        go.GetComponent<Renderer>().material = Instantiate(Resources.resources.anaBina);
+        go.GetComponent<Renderer>().material = Instantiate(Resource.resources.anaBina);
         //go.transform.localScale = new Vector3(size, size, size);
 
         //anabina ayarlari...
@@ -20,6 +20,7 @@ public class AnaBina : Bina
         go.transform.position = merkez.transform.position + konum;
         anabina.saglik = 100f;
         anabina.scale = size;
+        //Merkez.binas.Add(anabina);
         //anabinayi dondur...
         return anabina;
     }

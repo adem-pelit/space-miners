@@ -16,6 +16,6 @@ public class Varlik : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (saglik < 0) Destroy(gameObject);
+        //if (saglik < 0) Destroy(gameObject);
     }
 }

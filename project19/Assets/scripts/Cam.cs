@@ -18,7 +18,7 @@ public class Cam : MonoBehaviour
         */
     }
 
-    void FixedUpdate () {
+    void Update () {
         transform.LookAt(player.transform);
         //fps();
     }

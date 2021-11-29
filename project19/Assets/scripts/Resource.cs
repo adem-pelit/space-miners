@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Resources : MonoBehaviour
+public class Resource : MonoBehaviour
 {
-    public static Resources resources;
+    public static Resource resources;
     public Material anaBina;
     public Material beyaz;
+    public Sprite target;
 
     void Start()
     {
-        Resources.resources = this;
+        Resource.resources = this;
     }
 
     // Update is called once per frame

@@ -59,8 +59,8 @@ public class Bina : Varlik {
     {
         //GameObject ayarlari...
         var go = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        go.name = "Bina" + (konum + pos);
-        go.GetComponent<Renderer>().material = Instantiate(Resources.resources.anaBina);
+        go.name = "AnaBina" + (konum + pos);
+        go.GetComponent<Renderer>().material = Instantiate(Resource.resources.anaBina);
 
         //bina ayarlari...
         var bina = go.AddComponent<Bina>();
@@ -70,6 +70,7 @@ public class Bina : Varlik {
         bina.saglik = 100f;
         bina.scale = this.scale;
 
+        Merkez.binas.Add(bina);
         /*
         if (this.komsu.ContainsKey(pos))
         {
