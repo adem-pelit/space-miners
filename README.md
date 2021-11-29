@@ -10,6 +10,7 @@ https://adem-pelit.itch.io/spaceship
 ## Oyun Tanıtımı
 ### Temel Bilgiler
 Oyunda savaş gemisi ile uzay boşluğunda kolonileşmiş blokları en kısa sürede patlatmak gerekmektedir. Oyun `Unity - C#` ile yazılmış olup `WebGl` için üretilmiştir.
+
 ![Ekran Görüntüsü (53)](https://user-images.githubusercontent.com/55463533/143926154-55b20e5e-3fff-43c9-aa95-104c043838c7.png)
 
 ### Tuş Bilgisi
