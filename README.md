@@ -6,6 +6,8 @@ Adem PELİT
 18360859018
 ## GitHub link
 https://github.com/adem-pelit/space-miners/
+## Oyun sitesi
+https://adem-pelit.itch.io/spaceship
 ## Oyun Tanıtımı
 ### Temel Bilgiler
 ### Tuş Bilgisi
