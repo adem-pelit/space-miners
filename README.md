@@ -5,7 +5,7 @@ Oyun programlama ders vizesi için geliştirdiğimiz oyun projesi
 https://github.com/adem-pelit/space-miners/
 
 ## Oyun sitesi
-https://adem-pelit.itch.io/spaceship
+https://adem-pelit.itch.io/space-miners
 
 ## Oyun Tanıtımı
 ### Temel Bilgiler
