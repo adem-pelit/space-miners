@@ -18,6 +18,8 @@ public class Main : MonoBehaviour
         Main.main = this;
         yield return new WaitForEndOfFrame();
         createMerkez();
+        if (SceneManager.GetActiveScene().name == "main")
+            BackgroundSound.sound(1);
     }
 
     // Update is called once per frame
@@ -43,7 +45,7 @@ public class Main : MonoBehaviour
     public void createMerkez()
     {
         int alan = 100000;
-        for (int i = 0; i < Random.Range(6, 12); i++)
+        for (int i = 0; i < Random.Range(2, 3); i++)
         {
             var merk = Merkez.create("MERKEZ[" + i + "]", new Vector3(Random.Range(-alan, alan), Random.Range(-alan, alan), Random.Range(-alan, alan)));
             resimEkle(merk.name);
@@ -53,13 +55,15 @@ public class Main : MonoBehaviour
                 ekle = ekle.create(Bina.klist[Random.Range(0, Bina.klist.Count)], Bina.Varsa.silEkle);
             }
         }
-
     }
     public IEnumerator win()
     {
         zaman = Time.time - zaman;
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene(2);
+        if (SceneManager.GetActiveScene().name == "main")
+            SceneManager.LoadScene("main2");
+        if (SceneManager.GetActiveScene().name == "main2")
+            SceneManager.LoadScene("EndGame");
     }
     public void end()
     {

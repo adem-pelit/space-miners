@@ -19,15 +19,16 @@ public class GameOverScreen : MonoBehaviour
     public void Start()
     {
         text.text = (int)Main.main.zaman + " Saniyede Tamamlandi!\nScore: " + Main.main.score;
+        BackgroundSound.sound(0);
     }
     public void RestartButton()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("main");
     }
 
     public void ExitButton()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Menu");
     }
 
 

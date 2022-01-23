@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class SavasArac : Arac
 {
-    // Start is called before the first frame update
+    public static Transform t;
     void Start()
     {
         base.Start();
+        if (BackgroundSound.bs != null) BackgroundSound.bs.set(transform);
     }        
 
     // Update is called once per frame
     void Update()
     {
         base.Update();
+
     }
 }

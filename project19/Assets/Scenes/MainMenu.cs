@@ -5,9 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void PlayGame()
+    public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        BackgroundSound.bs.setted = false;
+        SceneManager.LoadScene("main");
+    }
+    public void ResumeGame()
+    {
+        if (BackgroundSound.bs != null)
+            if (BackgroundSound.bs.setted)
+                SceneManager.LoadScene(BackgroundSound.bs.scene);
     }
 
     public void QuitGame()

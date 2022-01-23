@@ -15,7 +15,9 @@ public class Merkez : MonoBehaviour
         go.transform.position = pos;
         var merkez = go.AddComponent<Merkez>();
         merkez.anabina = AnaBina.create(merkez, new Vector3Int(0, 0, 0), 500);
+        if (binas == null) binas = new List<Bina>();
         binas.Add(merkez.anabina);
+        if (merkezs == null) merkezs = new List<Merkez>();
         merkezs.Add(merkez);
         return merkez;
     }

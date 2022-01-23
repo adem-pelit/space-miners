@@ -41,6 +41,7 @@ public class Arac : Varlik
         {
             move();
             shoot();
+            if(Merkez.merkezs!=null)
             foreach (var mer in Merkez.merkezs)
                 if (Vector3.Distance(mer.transform.position, transform.position) < 10000)
                 {
@@ -58,7 +59,7 @@ public class Arac : Varlik
                         Main.main.resimler[mer.name].gameObject.SetActive(true);
                         Vector3 vect = Camera.main.WorldToScreenPoint(mer.transform.position);
                         vect.z = 0;
-                        print(Camera.main.WorldToViewportPoint(mer.transform.position));
+                        //print(Camera.main.WorldToViewportPoint(mer.transform.position));
                         Main.main.resimler[mer.name].GetComponent<Image>().transform.position = vect;
                     }
                     else Main.main.resimler[mer.name].gameObject.SetActive(false);
