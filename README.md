@@ -43,3 +43,19 @@ Uzay gemisinin manevralarını yapmak, ateş etmek ve blokları en kısa sürede
 
 ## Kullanılan Assetler ve linkleri
 https://assetstore.unity.com/packages/3d/vehicles/space/spacefighter-87056
+
+* şarkılar
+
+Epic Cinematic Gaming Cyberpunk | RESET by Alex-Productions | https://www.youtube.com/channel/UCx0_M61F81Nfb-BRXE-SeVA
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons CC BY 3.0
+https://creativecommons.org/licenses/by/3.0/
+
+The Beginning (w Caturday) by Babasmas | https://soundcloud.com/babasmasmoosic
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons CC BY-SA 3.0
+https://creativecommons.org/licenses/by-sa/3.0/
+
+## Final güncellemesi
+
+Final güncellemesi ile oynanabilir kısım iki adet sahne olacak şekilde değiştirildi. Giriş ve oyun kısmında çalmak üzere 2 adet arkaplan müziği eklendi. uzay gemisinin transform komponentinde bulunan position, rotation ve scale değerleri ve oyuncunun hangi sahnede bulunduğu verileri tutulmaktadır. oyun ekranında ana menüye dönülek istendiği takdirde kayıt işlemi gerçekleşmektedir. Start game seçeneği tıklandığında oyun sıfırdan başlamakta ancak resume seçeneği tıklandığında kaydedilen veriler ile oyuna başlanılmaktadır.
